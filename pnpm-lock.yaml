@@ -1219,6 +1219,7 @@ importers:
       '@novu/discord': ^0.8.0
       '@novu/emailjs': ^0.8.0
       '@novu/fcm': ^0.8.0
+      '@novu/firetext': ^0.8.0
       '@novu/gupshup': ^0.8.0
       '@novu/mailgun': ^0.8.0
       '@novu/mailjet': ^0.8.0
@@ -1268,6 +1269,7 @@ importers:
       '@novu/discord': link:../../providers/discord
       '@novu/emailjs': link:../../providers/emailjs
       '@novu/fcm': link:../../providers/fcm
+      '@novu/firetext': link:../../providers/firetext
       '@novu/gupshup': link:../../providers/gupshup
       '@novu/mailgun': link:../../providers/mailgun
       '@novu/mailjet': link:../../providers/mailjet
@@ -5196,6 +5198,26 @@ packages:
       '@babel/helper-annotate-as-pure': 7.16.7
       regexpu-core: 5.0.1
 
+  /@babel/helper-create-regexp-features-plugin/7.17.12_@babel+core@7.12.3:
+    resolution: {integrity: sha512-b2aZrV4zvutr9AIa6/gA3wsZKRwTKYoDxYiFKcESS3Ug2GTXzwBEvMuuFLhCQpEnRXs1zng4ISAXSUxxKBIcxw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.12.3
+      '@babel/helper-annotate-as-pure': 7.18.6
+      regexpu-core: 5.0.1
+
+  /@babel/helper-create-regexp-features-plugin/7.17.12_@babel+core@7.17.8:
+    resolution: {integrity: sha512-b2aZrV4zvutr9AIa6/gA3wsZKRwTKYoDxYiFKcESS3Ug2GTXzwBEvMuuFLhCQpEnRXs1zng4ISAXSUxxKBIcxw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.17.8
+      '@babel/helper-annotate-as-pure': 7.18.6
+      regexpu-core: 5.0.1
+
   /@babel/helper-create-regexp-features-plugin/7.17.12_@babel+core@7.18.5:
     resolution: {integrity: sha512-b2aZrV4zvutr9AIa6/gA3wsZKRwTKYoDxYiFKcESS3Ug2GTXzwBEvMuuFLhCQpEnRXs1zng4ISAXSUxxKBIcxw==}
     engines: {node: '>=6.9.0'}
@@ -5968,7 +5990,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.3
-      '@babel/helper-plugin-utils': 7.17.12
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.12.3
 
   /@babel/plugin-proposal-dynamic-import/7.16.7_@babel+core@7.17.8:
@@ -5978,7 +6000,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.17.8
-      '@babel/helper-plugin-utils': 7.17.12
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.17.8
 
   /@babel/plugin-proposal-dynamic-import/7.16.7_@babel+core@7.18.5:
@@ -6237,7 +6259,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.3
-      '@babel/helper-plugin-utils': 7.17.12
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-numeric-separator': 7.10.4_@babel+core@7.12.3
 
   /@babel/plugin-proposal-numeric-separator/7.16.7_@babel+core@7.17.8:
@@ -6247,7 +6269,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.17.8
-      '@babel/helper-plugin-utils': 7.17.12
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-numeric-separator': 7.10.4_@babel+core@7.17.8
 
   /@babel/plugin-proposal-numeric-separator/7.16.7_@babel+core@7.18.5:
@@ -6354,7 +6376,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.3
-      '@babel/helper-plugin-utils': 7.17.12
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-optional-catch-binding': 7.8.3_@babel+core@7.12.3
 
   /@babel/plugin-proposal-optional-catch-binding/7.16.7_@babel+core@7.17.8:
@@ -6364,7 +6386,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.17.8
-      '@babel/helper-plugin-utils': 7.17.12
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-optional-catch-binding': 7.8.3_@babel+core@7.17.8
 
   /@babel/plugin-proposal-optional-catch-binding/7.16.7_@babel+core@7.18.5:
@@ -7726,8 +7748,8 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.3
-      '@babel/helper-create-regexp-features-plugin': 7.17.0_@babel+core@7.12.3
-      '@babel/helper-plugin-utils': 7.16.7
+      '@babel/helper-create-regexp-features-plugin': 7.17.12_@babel+core@7.12.3
+      '@babel/helper-plugin-utils': 7.18.9
 
   /@babel/plugin-transform-dotall-regex/7.16.7_@babel+core@7.17.8:
     resolution: {integrity: sha512-Lyttaao2SjZF6Pf4vk1dVKv8YypMpomAbygW+mU5cYP3S5cWTfCJjG8xV6CFdzGFlfWK81IjL9viiTvpb6G7gQ==}
@@ -7736,8 +7758,8 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.17.8
-      '@babel/helper-create-regexp-features-plugin': 7.17.0_@babel+core@7.17.8
-      '@babel/helper-plugin-utils': 7.16.7
+      '@babel/helper-create-regexp-features-plugin': 7.17.12_@babel+core@7.17.8
+      '@babel/helper-plugin-utils': 7.18.9
 
   /@babel/plugin-transform-dotall-regex/7.16.7_@babel+core@7.18.5:
     resolution: {integrity: sha512-Lyttaao2SjZF6Pf4vk1dVKv8YypMpomAbygW+mU5cYP3S5cWTfCJjG8xV6CFdzGFlfWK81IjL9viiTvpb6G7gQ==}
@@ -9203,8 +9225,8 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.3
-      '@babel/helper-create-regexp-features-plugin': 7.17.0_@babel+core@7.12.3
-      '@babel/helper-plugin-utils': 7.16.7
+      '@babel/helper-create-regexp-features-plugin': 7.17.12_@babel+core@7.12.3
+      '@babel/helper-plugin-utils': 7.18.9
 
   /@babel/plugin-transform-unicode-regex/7.16.7_@babel+core@7.17.8:
     resolution: {integrity: sha512-oC5tYYKw56HO75KZVLQ+R/Nl3Hro9kf8iG0hXoaHP7tjAyCpvqBiSNe6vGrZni1Z6MggmUOC6A7VP7AVmw225Q==}
@@ -9213,8 +9235,8 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.17.8
-      '@babel/helper-create-regexp-features-plugin': 7.17.0_@babel+core@7.17.8
-      '@babel/helper-plugin-utils': 7.16.7
+      '@babel/helper-create-regexp-features-plugin': 7.17.12_@babel+core@7.17.8
+      '@babel/helper-plugin-utils': 7.18.9
 
   /@babel/plugin-transform-unicode-regex/7.16.7_@babel+core@7.18.5:
     resolution: {integrity: sha512-oC5tYYKw56HO75KZVLQ+R/Nl3Hro9kf8iG0hXoaHP7tjAyCpvqBiSNe6vGrZni1Z6MggmUOC6A7VP7AVmw225Q==}
@@ -11847,17 +11869,6 @@ packages:
     dev: false
     optional: true
 
-  /@graphql-tools/merge/8.2.13_graphql@15.8.0:
-    resolution: {integrity: sha512-lhzjCa6wCthOYl7B6UzER3SGjU2WjSGnW0WGr8giMYsrtf6G3vIRotMcSVMlhDzyyMIOn7uPULOUt3/kaJ/rIA==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    dependencies:
-      '@graphql-tools/utils': 8.6.12_graphql@15.8.0
-      graphql: 15.8.0
-      tslib: 2.4.0
-    dev: false
-    optional: true
-
   /@graphql-tools/merge/8.2.6_graphql@15.8.0:
     resolution: {integrity: sha512-dkwTm4czMISi/Io47IVvq2Fl9q4TIGKpJ0VZjuXYdEFkECyH6A5uwxZfPVandZG+gQs8ocFFoa6RisiUJLZrJw==}
     requiresBuild: true
@@ -11906,19 +11917,6 @@ packages:
     dev: false
     optional: true
 
-  /@graphql-tools/schema/8.3.13_graphql@15.8.0:
-    resolution: {integrity: sha512-e+bx1VHj1i5v4HmhCYCar0lqdoLmkRi/CfV07rTqHR6CRDbIb/S/qDCajHLt7FCovQ5ozlI5sRVbBhzfq5H0PQ==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    dependencies:
-      '@graphql-tools/merge': 8.2.13_graphql@15.8.0
-      '@graphql-tools/utils': 8.6.12_graphql@15.8.0
-      graphql: 15.8.0
-      tslib: 2.4.0
-      value-or-promise: 1.0.11
-    dev: false
-    optional: true
-
   /@graphql-tools/schema/8.3.5_graphql@15.8.0:
     resolution: {integrity: sha512-3mJ/K7TdL+fnEUtCUqF4qkh1fcNMzaxgwKgO9fSYSTS7zyT16hbi5XSulSTshygHgaD2u+MO588iR4ZJcbZcIg==}
     requiresBuild: true
@@ -11954,16 +11952,6 @@ packages:
       camel-case: 4.1.2
       graphql: 15.8.0
       tslib: 2.2.0
-    dev: false
-    optional: true
-
-  /@graphql-tools/utils/8.6.12_graphql@15.8.0:
-    resolution: {integrity: sha512-WQ91O40RC+UJgZ9K+IzevSf8oolR1QE+WQ21Oyc2fgDYYiqT0eSf+HVyhZr/8x9rVjn3N9HeqCsywbdmbljg0w==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    dependencies:
-      graphql: 15.8.0
-      tslib: 2.4.0
     dev: false
     optional: true
 
@@ -22763,7 +22751,7 @@ packages:
       '@apollographql/apollo-tools': 0.5.3_graphql@15.8.0
       '@apollographql/graphql-playground-html': 1.6.29
       '@graphql-tools/mock': 8.6.3_graphql@15.8.0
-      '@graphql-tools/schema': 8.3.13_graphql@15.8.0
+      '@graphql-tools/schema': 8.5.0_graphql@15.8.0
       '@josephg/resolvable': 1.0.1
       apollo-datasource: 3.3.1
       apollo-reporting-protobuf: 3.3.1
@@ -24833,7 +24821,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -24856,7 +24844,7 @@ packages:
       minipass-pipeline: 1.2.4
       mkdirp: 1.0.4
       p-map: 4.0.0
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 3.0.2
       ssri: 8.0.1
       tar: 6.1.11
@@ -27195,7 +27183,7 @@ packages:
     hasBin: true
 
   /cssfilter/0.0.10:
-    resolution: {integrity: sha1-xtJnJjKi5cg+AT5oZKQs6N79IK4=}
+    resolution: {integrity: sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==}
     requiresBuild: true
     dev: false
     optional: true
@@ -42135,17 +42123,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dev: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
 
   /promise-limit/2.7.0:
     resolution: {integrity: sha512-7nJ6v5lnJsXwGprnGXga4wx6d1POjvi5Qmf1ivTRxTjH4Z/9Czja/UCMLVmB9N93GeWOU93XaFaEt6jbuoagNw==}
